@@ -1,7 +1,7 @@
+<%- include ("header")  -%> 
+<h1>Crea Alumno</h1>
 
-  <%- include ("header")  -%> 
-  <p>BUSCAR ALUMNO </p>
-  <form action="/alumno/crear" method="POST">
+<form action="/alumno/crear" method="POST">
     <div>
         <label for="">Nombre</label>
         <input type="text" name="nombre">
@@ -14,9 +14,12 @@
         <label for="">Numero de Documento</label>
         <input type="text" name="documento">
     </div>
+    <div>
+        <label for="">Institucion</label>
+        <input type="text" name="institucion">
+    </div>
     
-    
-    <button type="submit">BUSCAR</button>
+    <button type="submit">Crear</button>
 </form>
-
-    <%- include ("footer")  -%> 
+    
+<%- include ("footer")  -%> 

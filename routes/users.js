@@ -4,7 +4,7 @@ var alumnosController = require("../controllers/alumnosController")
 
 // creacion
 
- router.get("/crear", alumnosController.crear);
+//  router.get("/crear", alumnosController.crear);
 
 //  router.post("/crear", alumnosController.guardado);
 

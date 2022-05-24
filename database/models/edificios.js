@@ -1,5 +1,5 @@
 module.exports = function (sequelize, dataTypes) {
-    let alias = "edificios";
+    let alias = "edificio";
     let cols = {
 
         id: {
@@ -21,9 +21,9 @@ let Edificios = sequelize.define(alias, cols, config);
 
 Edificios.associate = function(models){
 
-    Edificios.hasMany(models.alumno, {
-        as: "alumno",
-        foreignKey: "edificiosId"
+    Edificios.hasMany(models.Alumnos, {
+        as: "Alumnos",
+        foreignKey: "edificioId"
     });
 };
 

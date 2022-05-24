@@ -30,7 +30,7 @@ module.exports = function (sequelize, dataTypes) {
 
 let Alumnos = sequelize.define(alias, cols, config);
 
-Usuarios.associate = function(models){
+Alumnos.associate = function(models){
 
     Alumnos.belongsTo(models.edificios, {
         as: "edificios",

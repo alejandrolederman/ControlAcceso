@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2022 a las 16:52:32
+-- Tiempo de generación: 27-05-2022 a las 01:42:29
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.0.13
 
@@ -26,10 +26,10 @@ USE `control`;
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `alumno`
+-- Estructura de tabla para la tabla `alumnos`
 --
 
-CREATE TABLE `alumno` (
+CREATE TABLE `alumnos` (
   `id` int(11) NOT NULL,
   `firstName` varchar(50) NOT NULL,
   `lastName` varchar(50) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `alumno` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `alumno`
+-- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumno` (`id`, `firstName`, `lastName`, `edificioId`) VALUES
+INSERT INTO `alumnos` (`id`, `firstName`, `lastName`, `edificioId`) VALUES
 (1, 'alejandro', 'lederman', 2),
 (2, 'jose', 'perez', 1);
 
@@ -109,9 +109,9 @@ INSERT INTO `usuarios` (`id`, `firstName`, `lastName`, `categoriaId`) VALUES
 --
 
 --
--- Indices de la tabla `alumno`
+-- Indices de la tabla `alumnos`
 --
-ALTER TABLE `alumno`
+ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `edificioId` (`edificioId`);
 
@@ -139,9 +139,9 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `alumno`
+-- AUTO_INCREMENT de la tabla `alumnos`
 --
-ALTER TABLE `alumno`
+ALTER TABLE `alumnos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
@@ -167,10 +167,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- Filtros para la tabla `alumno`
+-- Filtros para la tabla `alumnos`
 --
-ALTER TABLE `alumno`
-  ADD CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`edificioId`) REFERENCES `edificios` (`id`) ON UPDATE CASCADE;
+ALTER TABLE `alumnos`
+  ADD CONSTRAINT `alumnos_ibfk_1` FOREIGN KEY (`edificioId`) REFERENCES `edificios` (`id`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuarios`

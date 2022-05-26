@@ -25,4 +25,4 @@ var alumnosController = require("../controllers/alumnosController")
 //  router.post("/borrar/:id", peliculasController.borrar);
 
 
-// module.exports = router;
+module.exports = router;

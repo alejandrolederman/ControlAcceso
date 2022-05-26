@@ -3,7 +3,7 @@ const db = require("../database/models")
 let alumnosController = {
 
     listado: function (req, res){
-        db.alumnos.findAll({
+        db.Alumno.findAll({
             include: [{association: "edificios"}]})
         .then(function(alumnos){
             res.render("listadoAlumnos", {alumnos:alumnos});

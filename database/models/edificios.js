@@ -17,12 +17,12 @@ module.exports = function (sequelize, dataTypes) {
         timestamps: false
     };
 
-let Edificios = sequelize.define(alias, cols, config);
+const Edificios = sequelize.define(alias, cols, config);
 
 Edificios.associate = function(models){
 
-    Edificios.hasMany(models.Alumnos, {
-        as: "Alumnos",
+    Edificios.hasMany(models.Alumno, {
+        as: "alumnos",
         foreignKey: "edificioId"
     });
 };

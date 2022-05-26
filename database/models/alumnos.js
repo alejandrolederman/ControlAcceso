@@ -1,5 +1,5 @@
 module.exports = function (sequelize, dataTypes) {
-    let alias = "alumnos";
+    let alias = "Alumno";
     let cols = {
 
         id: {
@@ -28,15 +28,15 @@ module.exports = function (sequelize, dataTypes) {
     }
 
 
-let Alumnos = sequelize.define(alias, cols, config);
+const Alumno = sequelize.define(alias, cols, config);
 
-Alumnos.associate = function(models){
+Alumno.associate = function(models){
 
-    Alumnos.belongsTo(models.edificios, {
-        as: "Edificios",
+    Alumno.belongsTo(models.edificio, {
+        as: "edificios",
         foreignKey: "edificioId"
     });
 };
 
-return Alumnos;
+return Alumno;
 };

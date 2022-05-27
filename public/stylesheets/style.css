@@ -23,3 +23,90 @@ nav ul li {
   margin-right: 10px;
 }
 
+/* login */
+
+.login {
+    margin: 0%;
+    padding: 0%;
+    background: url(../img/celulares_login.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+.form-login {
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.login-box {
+    width: 320px;
+    height: 530px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin: 0%;
+    /* padding: 0 0 20px; */
+    text-align: center;
+    /* font-size: 22px; */
+
+}
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 35%;
+}
+
+.h1Bienvenido{
+
+    margin-top: 50px;
+}
+
+.login-box label{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    display: block;
+   
+
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: e;
+    padding: 0;      
+    display: flex;    
+    /* position: absolute; */
+    left: 0px;   
+    bottom: 103px;}
+    
+    label.reco{
+    color: #808080;
+    font-size: 10px;
+    position: absolute;
+    transition: 0.5s ease all;
+    pointer-events: none;
+    padding-bottom: 20px;
+    }
+    .button-login{
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        color: #fff;
+        background: rgb(74, 74, 209);
+    }
+
